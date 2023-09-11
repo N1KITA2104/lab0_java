@@ -4,6 +4,9 @@ import java.util.Arrays;
 
 public class Variant1 {
     public int inMeter(int l) {
+        if (l < 0) {
+            throw new IllegalArgumentException("Вхідні данні не можуть бути негативними.");
+        }
         return l / 100;
     }
 
